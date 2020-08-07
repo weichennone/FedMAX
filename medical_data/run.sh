@@ -12,7 +12,6 @@ python train.py --arch resnet50 \
 
 python train.py --arch resnet50 \
                 --epochs 300 \
-                --train_dataset diabetic_retinopathy + aptos2019 \
                 --num_users 100 \
                 --iid 0 \
                 --seed 1 \
@@ -29,7 +28,6 @@ python train.py --arch resnet50 \
 
 python train.py --arch resnet50 \
                 --epochs 300 \
-                --train_dataset diabetic_retinopathy + aptos2019 \
                 --num_users 100 \
                 --iid 0 \
                 --seed 1 \

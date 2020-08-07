@@ -469,8 +469,6 @@ def main():
         for fold, (train_idx, val_idx) in enumerate(skf.split(aptos2019_img_paths, aptos2019_labels)):
             img_paths.append((np.hstack((aptos2019_img_paths[train_idx], diabetic_retinopathy_img_paths)), aptos2019_img_paths[val_idx]))
             labels.append((np.hstack((aptos2019_labels[train_idx], diabetic_retinopathy_labels)), aptos2019_labels[val_idx]))
-    else:
-        raise NotImplementedError
 
     # FL setting: separate data into users
     if 'diabetic_retinopathy' in args.train_dataset and 'aptos2019' in args.train_dataset:

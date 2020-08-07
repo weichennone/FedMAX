@@ -8,7 +8,7 @@ import argparse
 def args_parser():
     parser = argparse.ArgumentParser('CNN torch implementation')
     parser.add_argument('--dataset', default='cifar10', type=str)
-    parser.add_argument('--weight-decay', type=float, default=1e-04)
+    parser.add_argument('--weight-decay', type=float, default=5e-04)
     parser.add_argument('--lr', type=float, default=.1)
     parser.add_argument('--lr-decay', type=float, default=.1)
     parser.add_argument('--lr_drop', type=float, default=.992)
